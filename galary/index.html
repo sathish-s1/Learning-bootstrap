@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   
+   
+ 
+  </head>
+  <body>
+        
+     <nav class="navbar navbar-default navbar-fixed-top">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">Sathishkumar</a>
+
+            </div>
+        </div>
+
+     </nav>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+           <h2 class="page-header">Sathishkumar image galary</h2>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <a class="thumbnail" href="#">
+               <img class="img-responsive" src="images/image/sath12.jpg" alt="sathsih" onclick="myFunction(this);">
+            </a>
+         </div>
+         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <a class="thumbnail" href="#">
+               <img class="img-responsive" src="images/image/sath12.jpg" alt="sathsih" onclick="myFunction(this);">
+            </a>
+         </div>
+         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <a class="thumbnail" href="#">
+               <img class="img-responsive" src="images/image/sath12.jpg" alt="sathsih" onclick="myFunction(this);">
+            </a>
+         </div>
+         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <a class="thumbnail" href="#">
+               <img class="img-responsive" src="images/image/sath12.jpg" alt="sathsih" onclick="myFunction(this);">
+            </a>
+         </div>
+         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <a class="thumbnail" href="#">
+               <img class="img-responsive" src="images/image/sath12.jpg" alt="sathsih" onclick="myFunction(this);">
+            </a>
+         </div>
+         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <a class="thumbnail" href="#">
+               <img class="img-responsive" src="images/image/sath12.jpg" alt="sathsih" onclick="myFunction(this);">
+            </a>
+         </div>
+         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <a class="thumbnail" href="#">
+               <img class="img-responsive" src="images/image/sath12.jpg" alt="sathsih" onclick="myFunction(this);">
+            </a>
+         </div>
+         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <a class="thumbnail" href="#">
+               <img class="img-responsive" src="images/image/sath12.jpg" alt="sathsih" onclick="myFunction(this);">
+            </a>
+         </div>
+         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <a class="thumbnail" href="#">
+               <img class="img-responsive" src="images/image/sath12.jpg" alt="sathsih" onclick="myFunction(this);">
+            </a>
+         </div>
+      </div>
+
+
+      <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="close">X</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+      </div>
+
+
+          <footer style="margin-top: 30px;">
+             <div class="row">
+                <div class="col-lg-12">
+                     <p class="text-center">Copyright &copy; Sathishkumar</p>
+                </div>
+             </div>
+
+          </footer>
+   </div>
+
+  
+  
+<script>
+    function myFunction(imgs) {
+      var expandImg = document.getElementById("expandedImg");
+      var imgText = document.getElementById("imgtext");
+      expandImg.src = imgs.src;
+      imgText.innerHTML = imgs.alt;
+      expandImg.parentElement.style.display = "block";
+    }
+
+    
+
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+    
+
+       
+  </body>
+  </html>
